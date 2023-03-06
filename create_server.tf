@@ -6,7 +6,7 @@ provider "aws" {
 # Create a new EC2 instance
 resource "aws_instance" "example" {
   ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.large"
+  instance_type = "t2.xlarge"
   key_name      = "my-key-pair"
   security_groups = ["default"]
 
